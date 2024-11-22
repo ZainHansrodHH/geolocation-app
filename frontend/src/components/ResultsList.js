@@ -1,7 +1,7 @@
 const ResultsList = ({ results }) => (
-    <ul>
+    <ul className="results-container">
         {results.map((result, index) => (
-            <li key={index}>
+            <li className="result-card" key={index}>
                 <strong>{result.name}</strong><br />
                 Latitude: {result.latitude}, Longitude: {result.longitude}<br />
                 Time Zone: {result.time_zone}<br />

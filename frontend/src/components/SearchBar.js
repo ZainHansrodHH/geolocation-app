@@ -12,10 +12,11 @@ const SearchBar = ({ onSearch }) => {
             <input
                 type="text"
                 value={query}
+                className="search-input"
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for a location..."
             />
-            <button onClick={handleSearch}>Search</button>
+            <button className='search-button' onClick={handleSearch}>Search</button>
         </div>
     );
 };
