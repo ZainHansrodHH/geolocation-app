@@ -7,7 +7,8 @@ const Home = () => {
     const [results, setResults] = useState([]);
 
     const handleSearch = async (query) => {
-        const response = await axios.get(`http://localhost:5000/search?q=${query}`);
+        const response = await axios.get(`http://localhost:5050/search?q=${query}`);
+        console.log(response);
         setResults(response.data.suggestions);
     };
 
